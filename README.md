@@ -17,6 +17,7 @@ Linux driver for MT7601U with Monitor mode support and fixed memory leak
 由于对应的github中的源码缺失  所以可以使用此源码中的代码和bin实现驱动
 
 在生成的usb信息中  应该是大约这个样子的log
+```
 [    2.675204] usb 1-1: New USB device found, idVendor=148f, idProduct=7601
 [    2.681957] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
 [    2.856824] usb 1-1: reset high-speed USB device number 2 using ehci-platform
@@ -163,6 +164,6 @@ Wiphy phy0
         Device supports active monitor (which will ACK incoming frames)
         Device supports configuring vdev MAC-addr on create.
 
-
+```
 
 
