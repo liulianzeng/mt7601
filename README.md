@@ -6,8 +6,8 @@ Linux driver for MT7601U with Monitor mode support and fixed memory leak
 * fixed memory leak on Monitor mode
 
 源码中三个文件夹  依次为
-* DPO_MT7601U_LinuxSTA_3.0.0.4_20130913 旧款源码 2.26.x及以前的代码 
-* DPO_MT7601U_LinuxSTA_3.0.0.4_20130913_HI3518 旧款源码 2.26.x及以前的代码 
+* DPO_MT7601U_LinuxSTA_3.0.0.4_20130913 旧款源码 2.6.35及以前的代码 
+* DPO_MT7601U_LinuxSTA_3.0.0.4_20130913_HI3518 旧款源码 2.6.35及以前的代码 
 * mt7601u
 以上两组源码中有提供对应的bin文件  需将对应的bin文件放入到对应的目录中
 根据描述如下 cp ./DPO_MT7601U_LinuxSTA_3.0.0.4_20130913_HI3518/mcu/bin/MT7601.bin /lib/firmware/mt7601u.bin
