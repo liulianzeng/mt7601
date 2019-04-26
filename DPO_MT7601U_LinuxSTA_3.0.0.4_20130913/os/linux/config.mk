@@ -983,6 +983,12 @@ EXTRA_CFLAGS += $(WFLAGS) -I$(RT28xx_DIR)/include
 export EXTRA_CFLAGS
 endif
 
+ifeq ($(PLATFORM),SUN8i_V3S)
+EXTRA_CFLAGS += -Wno-incompatible-pointer-types -Wno-date-time
+EXTRA_CFLAGS += $(WFLAGS) -I$(RT28xx_DIR)/include
+export EXTRA_CFLAGS
+endif
+
 ifeq ($(PLATFORM),UBICOM_IPX8)
 EXTRA_CFLAGS += $(WFLAGS) 
 export EXTRA_CFLAGS

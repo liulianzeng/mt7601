@@ -27,7 +27,7 @@ include $(RT28xx_DIR)/os/linux/config.mk
 RTMP_SRC_DIR = $(RT28xx_DIR)/RT$(MODULE)
 
 #PLATFORM: Target platform
-PLATFORM = PC
+#PLATFORM = PC
 #PLATFORM = 5VT
 #PLATFORM = IKANOS_V160
 #PLATFORM = IKANOS_V180
@@ -61,6 +61,7 @@ PLATFORM = PC
 #PLATFORM = NXP_TV550
 #PLATFORM = MVL5
 #PLATFORM = RALINK_3352
+PLATFORM = SUN8i_V3S
 #PLATFORM = UBICOM_IPX8
 #PLATFORM = INTELP6
 #PLATFORM = MSTARTV
@@ -280,6 +281,11 @@ endif
 ifeq ($(PLATFORM),RALINK_3352)
 LINUX_SRC = /home/sample/3352/RT288x_SDK/source/linux-2.6.21.x
 CROSS_COMPILE = /opt/buildroot-gcc342/bin/mipsel-linux-
+endif
+
+ifeq ($(PLATFORM),SUN8i_V3S)
+LINUX_SRC = /opt/linux-zero-4.14.y
+CROSS_COMPILE = /opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 endif
 
 ifeq ($(PLATFORM),KODAK_DC)
